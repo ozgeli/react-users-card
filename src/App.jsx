@@ -5,7 +5,7 @@ import UserData from './components/UserData';
 const App = () => {
   return (
     <div className='App'>
-    <h1>User Profiles App</h1>
+    <div className='title'><h1>User Profiles App</h1></div>
      <UserData/> 
       
       

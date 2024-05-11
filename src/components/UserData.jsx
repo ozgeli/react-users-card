@@ -1,13 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import UserCard from './UserCard'
-
 const UserData = () => {
-
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
-
-
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -17,9 +13,7 @@ const UserData = () => {
             } catch (error) {
                 console.error('Error fetching data:',error);
                 setLoading(false);
-            }
-
-        };
+            }};
         fetchData();
     }, [])
     if (loading) return <p>Loading...</p>;

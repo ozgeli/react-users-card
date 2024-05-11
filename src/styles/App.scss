@@ -1,10 +1,20 @@
-.App{
+.App {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
+    
+    .title {
+        border: 2px solid #333;
+        width: 500px;
+        height: 100px;
+        margin: 10px auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); // corrected the rgba syntax
+        display: flex;
+        align-items: center;    // Centers the content vertically inside the title
+        justify-content: center; // Centers the content horizontally inside the title
 
-
-    h1{
-        color: #333;
+        h1 {
+            color: #333;
+        }
     }
 }
